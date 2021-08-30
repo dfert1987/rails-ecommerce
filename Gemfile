@@ -33,6 +33,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+gem 'bulma-rails', '~> 0.0.4.1'
+gem 'simple_form', '~> 5.1'
+gem 'devise', '~> 4.8'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+gem 'mini_magick', '~> 4.11'
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
@@ -47,7 +54,10 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem 'guard', '~> 2.18'
   gem 'selenium-webdriver'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
